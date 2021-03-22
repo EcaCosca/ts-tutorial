@@ -1,15 +1,19 @@
-interface Point {
-    x: number,
-    y: number
+class Point {
+    x: number;
+    y: number;
+    
+    draw () {
+        console.log('X: ' + this.x + ',Y: ' + this.y);
+    }
+
+    getDistance(another: Point) {
+        // ...
+    }
 }
 
-let drawPoint = (point: Point) => {
-    // 
-}
+let point = new Point();
+point.x = 1;
+point.y = 2;
+point.draw();
 
-drawPoint({
-    x: 1,
-    y: 2
-})
-
-// interace always use Pascal naming convention
+// Cohsesion, things that are related should be part of one unit 
