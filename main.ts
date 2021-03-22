@@ -1,6 +1,15 @@
-
-let log = function(message) {
-    console.log(message);
+interface Point {
+    x: number,
+    y: number
 }
 
-let doLog = () => console.log();
+let drawPoint = (point: Point) => {
+    // 
+}
+
+drawPoint({
+    x: 1,
+    y: 2
+})
+
+// interace always use Pascal naming convention
